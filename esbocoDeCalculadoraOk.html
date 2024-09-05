@@ -1,0 +1,65 @@
+
+<!DOCTYPE HTML>
+<html>
+<html lang = "pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Esboço de calculadora</title>
+
+<script>
+alert ("Seja bem vindo ao meu Esboço de Calculadora \\o/")
+alert ("Por favor, digite apenas números nas caixas para que os cálculos tenham o resultado correto >_0")
+function somar(){
+// tentar colocar const "n1" em todas as functions
+const soma1 = document.getElementById("n1").value
+const soma2 = document.getElementById("n2").value
+const soma = parseInt(soma1) + parseInt(soma2)
+console.log (soma)
+const resultado = document.getElementById("resultado")
+resultado.innerHTML = "O Resultado da Soma é " + soma
+}
+
+function subtrair(){
+const sub1 = document.getElementById("n1").value
+const sub2 = document.getElementById("n2").value
+const sub = (sub1 - sub2)
+console.log(sub)
+resultado.innerHTML = "O Resultado da Subtração é " + sub
+}
+
+function multiplicar(){
+const mult1 = document.getElementById("n1").value
+const mult2 = document.getElementById("n2").value
+const mult = (mult1 * mult2)
+console.log(mult)
+resultado.innerHTML = "O Resultado da Multiplicação é " + mult
+}
+
+function dividir(){
+const divi1 = document.getElementById("n1").value
+const divi2 = document.getElementById("n2").value
+const divi = (divi1 / divi2)
+console.log(divi)
+resultado.innerHTML = "O Resultado da Divisão é " + divi
+}
+
+
+
+</script>
+
+</head>
+<body>
+<form action ("")>
+Número 1: <input type="text" id="n1"/>
+<br>
+Número 2: <input type="text" id="n2"/>
+<br>
+<input type="button" value="Somar" onclick="somar()"/>
+<input type="button" value="Subtrair" onclick="subtrair()"/>
+<input type="button" value="Multiplicar" onclick="multiplicar()"/>
+<input type="button" value="Dividir" onclick="dividir()"/>
+
+<h1 id="resultado"> </h1>
+</form>
+</body>
+</html>

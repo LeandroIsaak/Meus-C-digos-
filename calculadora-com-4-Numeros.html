@@ -1,0 +1,67 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculadora</title>
+<script>
+function somar(){
+var soma1 = document.getElementById("n1").value
+var soma2 = document.getElementById("n2").value
+var soma3 = document.getElementById("n3").value
+var soma4 = document.getElementById("n4").value
+var soma = Number(soma1) + Number(soma2) + Number(soma3) + Number(soma4)
+console.log (soma)
+var resultado = document.getElementById("resultado")
+resultado.innerHTML = "A Soma dos Números é " + soma
+}
+function subtrair(){
+var sub1 = document.getElementById("n1").value
+var sub2 = document.getElementById("n2").value
+var sub3 = document.getElementById("n3").value
+var sub4 = document.getElementById("n4").value
+var sub = (sub1) - (sub2)- (sub3)- (sub4)
+console.log (sub)
+var resultado = document.getElementById("resultado")
+resultado.innerHTML = "A Subtração dos Números é " + sub
+}
+function multiplicar(){
+var mult1 = document.getElementById("n1").value
+var mult2 = document.getElementById("n2").value
+var mult3 = document.getElementById("n3").value
+var mult4 = document.getElementById("n4").value
+var mult = (mult1) * (mult2) * (mult2) * (mult2)
+console.log (mult)
+var resultado = document.getElementById("resultado")
+resultado.innerHTML = "A Multiplicação dos Números é " + mult
+}
+function dividir(){
+var divi1 = document.getElementById("n1").value
+var divi2 = document.getElementById("n2").value
+var divi3 = document.getElementById("n3").value
+var divi4 = document.getElementById("n4").value
+var divi = (divi1) / (divi2)/ (divi3)/ (divi4)
+console.log (divi)
+var resultado = document.getElementById("resultado")
+resultado.innerHTML = "A Divisão dos Números é " + divi
+}
+
+</script>
+</head>
+<body>
+Número 1: <input type="text" id="n1"/>
+<br>
+Número 2: <input type="text" id="n2"/>
+<br>
+Número 3: <input type="text" id="n3"/>
+<br>
+Número 4: <input type="text" id="n4"/>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="&#43;" onclick="somar()"/>
+<input type="button" value="-" onclick="subtrair()"/>
+<input type="button" value="x" onclick="multiplicar()"/>
+<input type="button" value="&#247;" onclick="dividir()"/>
+<h1 id="resultado"> </h1>
+</body>
+</html>
